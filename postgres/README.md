@@ -1,0 +1,1 @@
+fork from [docker-library/postgres](https://github.com/docker-library/postgres/tree/0a66d53fface5ccc8274f99712ba2f382a1caf42)

@@ -1,0 +1,8 @@
+# see https://github.com/docker-library/postgres/blob/0a66d53fface5ccc8274f99712ba2f382a1caf42/11/alpine/Dockerfile
+FROM postgres:11.5-alpine
+
+ENV PGDATA "/var/lib/postgresql/data/db-files/"
+RUN apk add -U tzdata  \
+  && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
+  && echo 'Asia/Shanghai' >/etc/timezone \
+  && apk del tzdata
