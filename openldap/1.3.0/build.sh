@@ -1,0 +1,1 @@
+docker build -t zhoumb/openldap:1.3.0 .
